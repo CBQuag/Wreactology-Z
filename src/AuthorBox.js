@@ -4,7 +4,9 @@ const AuthorBox = (props) => {
     
     let authorBox = {
         display: 'flex',
-        alignItems: 'center'
+        alignItems: 'center',
+        marginTop: '0px',
+        paddingRight:'30px'
     }
     let profilePic = {
         borderRadius: '50%',
@@ -13,9 +15,14 @@ const AuthorBox = (props) => {
     }
     return (
         <div style={authorBox} className="App-logo">
-            {props.profilePic?<img style={profilePic} src={props.profilePic} alt="" />:null}
-            <h4 className="App-logo">{props.author}</h4>
-            <h4 className="App-logo">{props.date}</h4>
+            <div style={authorBox}>
+                {props.profilePic?<img style={profilePic} src={props.profilePic} alt="" />:null}
+                <h4 className="App-logo">{props.author}</h4>
+            </div>
+            <div style={authorBox}>
+                <div>🕑</div>
+                <h4 className="App-logo">{props.date}</h4>
+            </div>
         </div>
     )
 }

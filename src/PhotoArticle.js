@@ -17,10 +17,10 @@ const PhotoArticle = (props) => {
     return (
         <div className="App-logo">
             {props.image ? <img style={articleImage} src={props.image} alt="Article" />:<div style={blackBox}></div>}
-            <h3>{props.type}</h3>
+            <h3 style={{color:'gray'}}>{props.type}</h3>
             <h2>{props.title}</h2>
-            <h4>{props.description}</h4>
-            <AuthorBox author={props.author} date={props.date} />
+            <p>{props.description}</p>
+            <AuthorBox profilePic={props.profilePic} author={props.author} date={props.date} />
         </div>
     )
 }

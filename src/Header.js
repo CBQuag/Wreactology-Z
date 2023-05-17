@@ -5,8 +5,8 @@ const Header = (props) => {
         display: 'flex',
         justifyContent: 'space-between',
         borderBottom: '2px solid lightGray',
-        marginBottom: '25px',
-        paddingBottom: '10px'
+        marginBottom: '35px',
+        paddingBottom: '15px'
     }
     const rightSide = {
         display: 'flex',

@@ -3,10 +3,10 @@ import './App.css'
 const TagBox=(props)=>{
     let tags=props.types.split(' ')
     let style={
-        backgroundColor:'lightGray',
+        backgroundColor: 'lightGray',
     }  
     return(
-        <div style={{display:'flex'}}>
+        <div style={{display:'flex',marginBottom:'30px'}}>
             {tags ? tags.map(type => (<div key={type}  style={style} className='type-box'>{type}</div>)):null}
         </div>
     )
